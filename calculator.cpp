@@ -19,5 +19,17 @@ int main() {
     cout << "Please enter your second value: ";
     cin >> num2;
 
+    if (op == '+') {
+        sum = num1 + num2;
+    } else if (op == '-') {
+        sum = num1 - num2;
+    } else if (op == '*') {
+        sum = num1 * num2;
+    } else if (op == '/') {
+        sum = num1 / num2;
+    }
+
+    cout << sum;
+
     return 0;
 }
