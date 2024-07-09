@@ -59,7 +59,7 @@ int main() {
     validOperator = false;
     }
 
-    cout << "Thank you for using the calculator";
+    cout << "Thank you for using the calculator," << endl << "Goodbye!";
 
     return 0;
 }
