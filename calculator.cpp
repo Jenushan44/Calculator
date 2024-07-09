@@ -41,11 +41,16 @@ int main() {
     } else if (op == '*') {
         sum = num1 * num2;
     } else if (op == '/') {
-        sum = num1 / num2;
+        if (num2 == 0) {
+            cout << "Error: division by zero" << endl;
+            continue;
+        } else {
+            sum = num1 / num2;
+        }
+
     } else if (op == '^') {
         sum = pow(num1, num2);
     } 
-
     cout << sum <<endl;
 
     cout << "Would you like to use the calculator again? (y/n): ";
