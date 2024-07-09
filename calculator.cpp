@@ -1,4 +1,5 @@
 #include <iostream>
+#include<cmath>
 using namespace std;
 
 int main() {
@@ -20,10 +21,10 @@ int main() {
 
     while (!validOperator){
         
-        cout << "Please enter the operator: " <<endl;
+        cout << "Please enter the operator (+ , - , / , *, ^, %) : " <<endl;
         cin >> op;
 
-        if (op == '+' || op == '-' || op == '*' || op == '/') {
+        if (op == '+' || op == '-' || op == '*' || op == '/' || op == '^' || op == '%') {
             validOperator = true;
         } else {
             cout << "Please enter a valid operator!" <<endl;
@@ -41,6 +42,8 @@ int main() {
         sum = num1 * num2;
     } else if (op == '/') {
         sum = num1 / num2;
+    } else if (op == '^') {
+        sum = pow(num1, num2);
     } 
 
     cout << sum <<endl;
@@ -48,7 +51,6 @@ int main() {
     cout << "Would you like to use the calculator again? (y/n): ";
     cin >> again;
 
-    
     validOperator = false;
     }
 
